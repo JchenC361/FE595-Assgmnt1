@@ -1,9 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-time = np.arange(0,2*np.pi,0.1)
+# Make lines more accurate while approaching x = 1
+time = np.arange(0,2*np.pi,0.01)
 sin = np.sin(time)
 cos = np.cos(time)
+tan = np.tan(time)
 
 # Limit the range of y axis between -1 to 1.
 plt.ylim((-1, 1))
